@@ -3,8 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <title>eidng8</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      color: #aaa;
+      background: #333;
+      font-family: Avenir, Helvetica, Arial, sans-serif;
+    }
+
+    a {
+      color: #48c;
+      text-decoration: none;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1, h3 {
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    h3:first-of-type {
+      margin-bottom: 0;
+    }
+
+    h3:last-of-type {
+      margin-top: 0;
+    }
+
+    h1 > span {
+      display: block;
+    }
+
+    #main {
+    }
+
+    .small {
+      line-height: 4em;
+      font-size: .8em;
+    }
+
+    .button {
+      padding: 1rem;
+      margin: 1rem;
+      background: #444;
+    }
+
+    .button:hover {
+      background: #666;
+    }
+
+    .button[aria-disabled] {
+      cursor: not-allowed;
+    }
+
+    .caret:after {
+      content: '\2023';
+      display: inline-block;
+    }
+
+    .caret-up:after {
+      transform: rotate(270deg);
+    }
+
+    .caret-down:after {
+      transform: rotate(90deg);
+    }
+  </style>
 </head>
 <body>
-<a href="xml-patch/index.html">XML Patch</a>
+<div id="main">
+  <a class="button" href="xml-patch/index.html">XML Patch</a>
+  <h3>
+    <span class="caret caret-up"></span>
+    <span class="caret caret-up"></span>
+    <span class="caret caret-up"></span>
+    Libraries and Tools
+    <span class="caret caret-up"></span>
+    <span class="caret caret-up"></span>
+    <span class="caret caret-up"></span>
+  </h3>
+  <h1>
+    <span>work</span>
+    <span class="small">
+      <span class="small"><span class="small">eden</span></span>
+      <span>&amp;</span>
+      <span class="small"><span class="small">gate</span></span>
+    </span>
+    <span>fun</span>
+  </h1>
+  <h3>
+    <span class="caret caret-down"></span>
+    <span class="caret caret-down"></span>
+    <span class="caret caret-down"></span>
+    Gaming Tools
+    <span class="caret caret-down"></span>
+    <span class="caret caret-down"></span>
+    <span class="caret caret-down"></span>
+  </h3>
+  <span class="button" aria-disabled="true">X4 Modding</span>
+</div>
 </body>
 </html>
