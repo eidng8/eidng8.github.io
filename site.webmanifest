@@ -1,6 +1,7 @@
 {
-  "name": "eden gate",
+  "name": "Eiden Gate",
   "short_name": "eidng8",
+  "start_url": ".",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -15,5 +16,6 @@
   ],
   "theme_color": "#999999",
   "background_color": "#333333",
-  "display": "standalone"
+  "display": "standalone",
+  "orientation": "landscape"
 }
